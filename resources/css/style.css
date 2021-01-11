@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: "Lexend Mega", sans-serif;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a:link, a:visited {
+    color: black;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.top h1{
+    background-color: rgba(158, 130, 0, 0.6);
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.title, .highlight {
+    margin: auto;
+    background-color: white;
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    height: 300px;
+    padding-top: 35px;
+    background-image: url("../img/interesting-pic.jfif"); 
+}
+
+.highlight{
+    flex-direction: column;
+}
+
+.skills-header{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 35px;
+    margin: 30px 40px;
+}
+
+.skills {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-auto-flow: 200px / 200px;
+    margin-right: 40px;
+}
+
+.skill {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template: 1fr / repeat(2, 1fr);
+}
+
+.skill img {
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+    padding: 10px;
+    width: auto;
+}
+
+.skills-description {
+    height: 150px;
+    text-align: center;
+    min-width: 240px;
+    padding: 5px;
+    background-color:rgba(158, 130, 0, 0.6);
+}
+
+.skills-description span {
+    font-weight: bold;
+}
+
+.skills-description p {
+    font-size: 1rem;
+}
+
+.projects {
+    background-color: rgba(158, 130, 0, 0.6);
+    padding: 35px 0;
+    margin: 50px 0;
+}
+
+.projects h1 {
+    font-family:"Open Sans";
+}
+
+.aboutMe {
+    padding-top: 35px;
+}
+
+.textInfo {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
+.textInfo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.contact{
+    width: 100%;
+    background-color: rgba(158, 130, 0, 0.6);
+}
+
+.contact section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact h6{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    margin: auto;
+}
+
+.contact p{
+    font-size: 0.7em;
+}
+
+.contact img{
+    width: 40px;
+}
+
+@media only screen and (max-width:500px) {
+    .skills {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template: repeat(2, 1fr) / 1fr;
+        grid-auto-flow: 200px / 200px;
+        margin-right: 40px;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+
+}
