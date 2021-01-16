@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Lexend+Mega);
+
+html {
+    font-family: "Lexend Mega", sans-serif;
+    font-size: 16px;
+}
+
+.top{
+    display: flex;
+    background-color: rgba(158, 130, 0, 0.6);
+    height: 120px;
+}
+
+.topText{
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.topText a:link, a:visited {
+    color: black;
+}
+
+.topText a:hover {
+    color: rgba(192, 31, 31, 0.9);
+}
+
+h2 {
+    padding-top: 40px;
+    text-align: center;
+}
+

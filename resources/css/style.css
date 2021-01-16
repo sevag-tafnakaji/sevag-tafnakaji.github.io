@@ -23,7 +23,7 @@ h1 {
     margin-block-end: 0.67em; 
 }
 
-|* {
+* {
     box-sizing: border-box;
 }
 
@@ -34,8 +34,6 @@ h1 {
     position: fixed;
     text-align: center;
     background-image: url(../img/background-stars.jpg);
-    transition: opacity 2s;
-    transition-timing-function: ease-in-out;
 }
 
 #startText {
@@ -64,18 +62,10 @@ nav {
 }
 
 .navbar a:hover {
-    color: red;
-}
-
-.top h1{
-    background-color: rgba(158, 130, 0, 0.6);
-    margin: 0;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    color: rgba(192, 31, 31, 0.9);
 }
 
 .title, .highlight {
-    margin: auto;
     background-color: white;
     width: 100%;
 }
@@ -89,6 +79,7 @@ nav {
 
 .highlight{
     flex-direction: column;
+    margin: auto;
 }
 
 .skills-header{
@@ -126,7 +117,7 @@ nav {
     height: 150px;
     text-align: center;
     min-width: 240px;
-    padding: 5px;
+    margin: 5px;
     background-color:rgba(158, 130, 0, 0.6);
 }
 
