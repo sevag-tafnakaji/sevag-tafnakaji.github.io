@@ -1,5 +1,14 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
+html, body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
     font-family: "Lexend Mega", sans-serif;
     color: black;
     background-color: white;
@@ -12,6 +21,37 @@ h1 {
     font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em; 
+}
+
+|* {
+    box-sizing: border-box;
+}
+
+#startScreen{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+    text-align: center;
+    background-image: url(../img/background-stars.jpg);
+    transition: opacity 2s;
+    transition-timing-function: ease-in-out;
+}
+
+#startText {
+    color: rgb(237,237,237);
+    width: 100%;
+    position: relative;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Sans";
+    font-size: 2.5rem;
+}
+
+#startText h1 {
+    font-weight: bold;
+    font-size: 4rem;
 }
 
 nav {
@@ -64,7 +104,7 @@ nav {
     align-items: center;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     grid-auto-flow: 200px / 200px;
-    margin-right: 40px;
+    margin-right: 0;
 }
 
 .skill {
