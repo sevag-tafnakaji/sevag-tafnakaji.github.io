@@ -30,3 +30,12 @@ h2 {
     text-align: center;
 }
 
+
+h2 a:link, a:visited {
+    color: black;
+}
+
+h2 a:hover {
+    color: rgba(192, 31, 31, 0.9);
+}
+
