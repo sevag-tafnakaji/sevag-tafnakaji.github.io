@@ -1,163 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@200;400;700&display=swap');
+/* Styles that affect the entire page */
 
+/* Colour pallete */
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    font-family: "Lexend Mega", sans-serif;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    text-align: center;
-}
-
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em; 
-}
+/* 
+#287094 cyan - dark blue rgb(16, 44, 58)
+#D4D4Ce medium gray rgb(83, 83, 81)
+#F6F6F6 off-white
+#234246 dark blue
+*/
+/* body {
+    
+} */
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #234246;
+    font-family: "Lexend Mega", sans-serif;
+    color: #F6F6F6;
 }
 
-#startScreen{
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    position: fixed;
-    text-align: center;
-    background-image: url(../img/background-stars.jpg);
+/* .content{
+    min-height: 100vh;
+    margin-bottom: 40px;
+} */
+
+/* --------------- START OF NAVIGATION BAR--------------- */
+
+li, a, button {
+    /* font-family: "Lexend Mega", sans-serif; */
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    /* display: inline; */
 }
 
-#startText {
-    color: rgb(237,237,237);
-    width: 100%;
-    position: relative;
-    top: 25%;
+header{
     display: flex;
-    flex-direction: column;
-    font-family: "PT Sans";
-    font-size: 2.5rem;
-    
+    justify-content: space-between;
+    align-items:center;
+    padding: 30px 1%;
 }
 
-#startText h1 {
-    font-weight: bold;
-    font-size: 4rem;
+.hyperlist{
+    list-style:none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
+ul.hyperlist li{
+    display: inline-block;
+    /* margin: 0 1.5em; */
+    padding: 0px 40px;
 }
 
-.navbar a:link, a:visited {
-    color: black;
+ul.hyperlist li a{
+    transition: all 0.3 ease 0s;
 }
 
 .navbar a:hover {
-    color: rgba(192, 31, 31, 0.9);
+    color: #287094;
 }
 
-.title, .highlight {
-    background-color: white;
-    width: 100%;
+button {
+    padding: 9px 25px;
+    background-color: rgba(83, 83, 81, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
 }
 
+button:hover {
+    background-color: rgba(83, 83, 81, 0.7);
+}
+
+/* --------------- END OF NAVIGATION BAR--------------- */
+
+/* --------------- START OF TITLE SECTION--------------- */
+ 
 .title{
-    display: flex;
-    height: 300px;
-    padding-top: 35px;
-    background-image: url("../img/interesting-pic.jfif"); 
+    padding-left: 60px;
+    margin-top: 100px;
+    overflow: auto;
+    /* max-width: 400px; */
 }
 
-.highlight{
-    flex-direction: column;
-    margin: auto;
+.introText{
+    padding-top: 60px;
 }
 
-.skills-header{
-    text-align: left;
-    font-weight: bold;
-    padding-left: 35px;
-    margin: 30px 40px;
+.introText p{
+    font-size: 16px;
+    font-weight: 200;
 }
 
-.skills {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    grid-auto-flow: 200px / 200px;
-    margin-right: 0;
+h2.titleText{
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.skill {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    grid-template: 1fr / repeat(2, 1fr);
+p.description{
+    margin-bottom: 10px;
+}
+.title img{
+    max-width: 400px;
+    height: auto;
+    float: right;
+    margin-right: 30px;
 }
 
-.skill img {
-    margin-right: auto;
-    margin-left: auto;
-    height: 150px;
-    padding: 10px;
-    width: auto;
+p.description {
+    font-size: 12px;
+    /* max-width: 400px; */
 }
+ 
 
-.skills-description {
-    height: 150px;
-    text-align: center;
-    min-width: 240px;
-    margin: 5px;
-    background-color:rgba(158, 130, 0, 0.6);
-}
+/* --------------- END OF TITLE SECTION--------------- */
 
-.skills-description span {
-    font-weight: bold;
-}
-
-.skills-description p {
-    font-size: 1rem;
-}
-
-.projects {
-    background-color: rgba(158, 130, 0, 0.6);
-    padding: 35px 0;
-    margin: 50px 0;
-}
-
-.projects h1 {
-    font-family:"Open Sans";
-}
+/* --------------- START OF DESCRIPTION SECTION --------------- */
 
 .aboutMe {
-    padding-top: 35px;
+    /* padding-left: 60px; */
+    padding-top: 160px;
 }
 
-.textInfo {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 120px;
+.aboutMe p{
+    max-width: 600px;
 }
 
-.textInfo img {
-    max-width: 200px;
-    height: auto;
+/* .description{
+    margin-bottom: 60px;
+} */
+
+.description a{
+    font-size: 12px;
+    color:#287094
 }
 
-.contact{
+
+
+/* --------------- END OF DESCRIPTION SECTION--------------- */
+
+
+/* footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    background-color: rgba(158, 130, 0, 0.6);
+
+    transition: bottom 0.2s ease-in-out;
 }
 
 .contact section {
@@ -177,7 +170,9 @@ nav {
 
 .contact img{
     width: 40px;
-}
+} */
+
+
 
 @media only screen and (max-width:500px) {
     .skills {
@@ -195,5 +190,8 @@ nav {
         flex-wrap: wrap;
     }
     
-
+    ul.hyperlist li{
+        display: inline;
+        margin: 0 auto;
+    }
 }

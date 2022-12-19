@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sevag's Projects</title>
+        <link href="../resources/css/projects.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <header>
+            <!-- <h3>Sevag's Portfolio</h3> -->
+            <nav class="navbar">
+              <ul class="hyperlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#About">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+              </ul>
+            </nav>
+            <a href="mailto:sevag.tafnakaji@gmail.com"><button>Contact</button></a>
+          </header>
+
+
+        <div class="content">
+            <div class="title">
+              <div class="introText">
+                <h2 class="titleText">Mobile Manipulation and Navigation benchmarking</h2>
+                <p class="description">Collection of major projects worked on so far. Will be continuously expanded</p>
+              </div>
+
+            <div class="projects">
+                <div class="singleProject" id="dora">
+                    <div class="projectDescription">
+                        <span>Bachelor project - Dexterous Robot Assistant</span>
+                        <a href="dora.html"><button>Learn More</button></a>
+                    </div>
+                    <img src="../resources/img/DORA.png"/>
+                </div>
+                <div class="singleProject" id="benchmarking">
+                    <div class="projectDescription">
+                        <span>Conference Paper</span>
+                        <a href="benchmarking.html"><button>Learn More</button></a>
+                    </div>
+                    <img src="../resources/img/research_paper.png"/>
+                </div>
+            </div>
+        </div>
+        <main>
+            <!-- <div class="project" id="dora">
+                <div class="firstPart">
+                    <img src="resources/img/DORA.png"/> 
+                    <h1 class="descriptionHeading">Dexterous Robot Assistant</h1>
+                    <p class="description">
+                    My first large project was my bachelor thesis. The main objective was
+                    the implementation of a mobile manipulator for general pick and place tasks.
+                    This means that we expect to have a camera view of the area/room, and a map of
+                    the area before we try to execute any tasks. Using these informations, 
+                    the robot should be able to estimate where the desired object is, navigate towards it,
+                    then attempt to lift it up and transport it to another desired position.
+                    </p>
+                </div>
+                <iframe src="https://www.youtube.com/embed/aSM0vfxg3Ss?list=PLuM4JwsPsOFqddpGvVs12ZLdjOYGDXxUK" 
+                    title="DORA - Successful grasps" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                <div class="secondPart">
+                    <p class="rightText">
+                        As there were technical issues with the mobile base, the navigation implementations could 
+                        only be tested in the simulations. This meant that the build in navigation implementations 
+                        and tools could not be taken advantage of so we had to assume no available resources other than 
+                        the sensors on the robot. We had simulated the navigation using the two laser scanners on the robot, 
+                        following the popular ROS navigation stack implementations we had global planners, local planners, localisation
+                        methods and mapping capabilities. We did some quick tests on the mobile manipulator's capabilities of object
+                        avoidance using different popular ROS local planners and found that Timed Elastic Band (TEB) was better than Dynamic
+                        Window Approach (DWB) which matched some other works on the same algorithms. Currently, the mobile base is being fixed which means that
+                        a future project is to implement said navigation on the robot and see if it works as well as it does in the simulation
+                    </p>
+                    <p class="leftText">
+                    Most of our work was done in simulations, using the ROS framework. We used python and
+                    readily available ROS packages to implement the needed parts for the project. for the CV,
+                    we used the PCL library which did the segmentation and filtration needed to isolate the object
+                    the robot was to grab (which in this video is the milk bottle). The visualisation in the RVIZ window
+                    shows already the filtered input from the depth camera found in the room. Once the segmentation was done,
+                    the GPD library was used to find suitable grasps which we tuned to the available gripper. Due to some limitations,
+                    however, we were never able to place the object somewhere else. We found that in the simulation, the physics engine
+                    had difficulties simulating contact between the gripper and the object and that lead to the object flying out of view,
+                    and due to the base in the real world not working, we could not transport it somewhere else. Later we could move things around
+                    on the same table which made it behave like a regular, stationary, manipulator. 
+                    </p>                    
+                    
+                </div>
+            </div> -->
+        </main>
+    </body>
+
+    <!-- <footer class="contact" id="Contact">
+        <h6>Contact information:</h6>
+        <section class="contact-info">
+        <p>Email: sevag.tafnakaji@gmail.com</p>
+        <a href="https://www.instagram.com/sevag_tafnakaji/" target="_blank"><img src="resources/img/instagram-logo.ico"></a>
+        <a href="https://www.facebook.com/sevag.tufenkjian" target="_blank"><img src="resources/img/facebook-logo.ico"></a>
+        </section>
+
+    </footer> -->
+
+</html>
